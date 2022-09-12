@@ -25,11 +25,15 @@ header {
 #bottomheader {
   display: flex;
   height: 75px;
+  justify-content: center;
 }
 
 #mobilemenu {
   display: flex;
   margin-left: 20px;
+  position: absolute;
+  left: 1%;
+  align-self: center;
 }
 
 #mobilemenubutton {
@@ -306,4 +310,51 @@ footer {
 .cardblurb {
   font-size: 0.8125em;
   color: #272a31;
+}
+
+.curtainmenu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #272a31;
+}
+
+.menuitems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuitem {
+  border-bottom: 1px solid lightgrey;
+  text-decoration: none;
+  color: #ec5242;
+  padding: 16px;
+  font-size: 1.5em;
+}
+
+.closediv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+#closebutton {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 2em;
+}
+
+.closer {
+  color: #d3d3d3;
+  height: 20px;
+}
+
+#logolink {
+  align-self: center;
 }
