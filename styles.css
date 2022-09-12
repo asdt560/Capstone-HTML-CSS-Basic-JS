@@ -260,3 +260,50 @@ footer {
   width: 90%;
   margin-bottom: 60px;
 }
+
+#speakercontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  align-self: center;
+}
+
+.card {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.cardimage {
+  align-self: flex-start;
+  margin-right: 10px;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardtitle {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.cardsubtitle {
+  font-weight: 400;
+  color: #ec5242;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.carddivider {
+  border: 1px solid lightgrey;
+  width: 30px;
+}
+
+.cardblurb {
+  font-size: 0.8125em;
+  color: #272a31;
+}
