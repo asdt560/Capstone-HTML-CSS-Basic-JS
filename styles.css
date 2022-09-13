@@ -337,7 +337,6 @@ footer {
   color: #272a31;
 }
 
-
 .cardhandlerbutton {
   width: 80%;
   align-self: center;
@@ -574,6 +573,7 @@ footer {
     background-color: #272a31;
     color: #d3d3d3;
   }
+
   .cardhandlerbutton {
     display: none;
   }
