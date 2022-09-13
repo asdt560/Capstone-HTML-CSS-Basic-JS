@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[Github Pages Link]
+[Github Pages Link](https://asdt560.github.io/Capstone-HTML-CSS-Basic-JS/)
 
 ## Authors
 
