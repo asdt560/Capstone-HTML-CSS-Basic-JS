@@ -211,7 +211,7 @@ header {
 }
 
 #partners {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #272a31;
 }
@@ -230,6 +230,10 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+}
+
+#mainfooter {
+  display: none;
 }
 
 #logosection {
@@ -288,6 +292,12 @@ footer {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+}
+
 .card {
   display: flex;
   padding: 1em;
@@ -325,6 +335,21 @@ footer {
 .cardblurb {
   font-size: 0.8125em;
   color: #272a31;
+}
+
+.cardhandlerbutton {
+  width: 80%;
+  align-self: center;
+  padding: 1em;
+  margin: 1em;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+#arrow {
+  transform: rotate(90deg);
+  color: #ec5242;
 }
 
 .curtainmenu {
@@ -371,7 +396,8 @@ footer {
 }
 
 #logolink {
-  align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 #topheaderitems {
@@ -393,8 +419,9 @@ footer {
 }
 
 #logoplace {
-  max-width: 550px;
-  max-height: 200px;
+  max-width: 400px;
+  max-height: 400px;
+  border: 1px solid lightgrey;
 }
 
 #pastimagecontainer {
@@ -524,6 +551,10 @@ footer {
     padding: 0;
   }
 
+  #partners {
+    display: flex;
+  }
+
   #pastimagecontainer {
     flex-direction: row;
     justify-content: space-around;
@@ -532,5 +563,18 @@ footer {
 
   .linkpast {
     width: 40%;
+  }
+
+  #mainfooter {
+    display: flex;
+  }
+
+  #aboutfooter {
+    background-color: #272a31;
+    color: #d3d3d3;
+  }
+
+  .cardhandlerbutton {
+    display: none;
   }
 }
