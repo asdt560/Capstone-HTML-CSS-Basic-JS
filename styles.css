@@ -211,7 +211,7 @@ header {
 }
 
 #partners {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #272a31;
 }
@@ -230,6 +230,10 @@ footer {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+}
+
+#mainfooter {
+  display: none;
 }
 
 #logosection {
@@ -288,6 +292,12 @@ footer {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  #speakercontainer .card:nth-child(n+3) {
+    display: none;
+  }
+}
+
 .card {
   display: flex;
   padding: 1em;
@@ -325,6 +335,21 @@ footer {
 .cardblurb {
   font-size: 0.8125em;
   color: #272a31;
+}
+
+#morebutton {
+  width: 80%;
+  align-self: center;
+  padding: 1em;
+  margin: 1em;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+#arrow {
+  transform: rotate(90deg);
+  color: #ec5242;
 }
 
 .curtainmenu {
@@ -526,6 +551,10 @@ footer {
     padding: 0;
   }
 
+  #partners {
+    display: flex;
+  }
+
   #pastimagecontainer {
     flex-direction: row;
     justify-content: space-around;
@@ -534,5 +563,14 @@ footer {
 
   .linkpast {
     width: 40%;
+  }
+
+  #mainfooter {
+    display: flex;
+  }
+
+  #aboutfooter {
+    background-color: #272a31;
+    color: #d3d3d3;
   }
 }
