@@ -133,6 +133,11 @@ header {
   background-image: url(./images/pattern.jpg);
 }
 
+#programholder {
+  display: flex;
+  flex-direction: column;
+}
+
 .titlecontainer {
   display: flex;
   flex-direction: column;
@@ -190,6 +195,14 @@ header {
   color: white;
   margin: 50px;
   font-size: 1.1em;
+}
+
+.programlink {
+  display: none;
+  text-decoration: underline;
+  align-self: center;
+  margin: 75px;
+  color: #d3d3d3;
 }
 
 #speakers {
@@ -391,6 +404,14 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .programbutton {
+    display: none;
+  }
+
+  .programlink {
+    display: block;
+  }
+
   header {
     background-image: url(./images/main_desktopBG.png);
     display: flex;
@@ -461,9 +482,34 @@ footer {
     width: 80%;
   }
 
+  #programholder {
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+    align-items: center;
+  }
+
   .programdiv {
     width: 60%;
     align-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1px;
+  }
+
+  .programdiv > * {
+    padding: 0;
+  }
+
+  .programimg {
+    margin-top: 1em;
+  }
+
+  .programblurb {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    width: 80%;
   }
 
   #speakercontainer {
