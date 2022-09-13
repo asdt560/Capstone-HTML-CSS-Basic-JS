@@ -14,7 +14,7 @@
   <body>
     <header id="aboutheader">
         <section id="topheader"></section>
-        <section id="bottomheader">
+        <section class="bottomheader">
             <div id="mobilemenu">
                 <a id="mobilemenubutton" href="#">
                     <img src="./images/mobile_menu.png">
@@ -23,13 +23,20 @@
             <a id="logolink" href="/index.html">
                 Placeholder Logo
             </a>
+            <div id="desktopmenu">
+                <a class="menuitem" href="/about.html">About</a>
+                <a class="menuitem" href="#">Program</a>
+                <a class="menuitem" href="#">Join</a>
+                <a class="menuitem" href="#">Sponsor</a>
+                <a class="menuitem" href="#">News</a>
+            </div>
         </section>
         <section id="aboutheadline">
             <p id="welcome">"Hello, creators!"</p>
             <h1 id="abouttitle">CONTENT CREATORS <br>
                 CONVENTION
                 2022</h1>
-            <p id="aboutblurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero similique fugit quis cumque earum autem, culpa consequatur fugiat omnis quisquam odio tempora ea laboriosam, consequuntur ex sequi recusandae veritatis. aaaaaaa aaaaaaaaaaaaa aaaa aaaaaa aaaaa aaa aaaa aaaaaa</p>
+            <p id="aboutblurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vero similique fugit quis cumque earum autem, culpa consequatur fugiat omnis quisquam odio tempora ea laboriosam, consequuntur ex sequi recusandae veritatis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad corrupti quos, impedit asperiores ea consequuntur voluptas mollitia, ab animi deserunt quidem velit atque? Quis voluptatem molestiae cupiditate laborum in cumque!</p>
             <p id="contact">Please contact us through Email for any further questions about Content Creators Convention 2022</p>
             <p id="email">whatever@gmail.com</p>
         </section>
@@ -40,7 +47,7 @@
             <span class="titleunderline"></span>
         </div>
         <p class="smallblurb">The logo of CC Convention 2022 was decided through the logo competition, from 8. June to 7. July</p>
-        <img class="imagefit" src="./images/placeholderlogo.png" alt="Logo">
+        <img class="imagefit" id="logoplace" src="./images/placeholderlogo.png" alt="Logo">
         <span class="borderspan"></span>
     </section>
     <section id="pastsection">
@@ -49,12 +56,14 @@
             <span class="titleunderline"></span>
         </div>
         <p class="smallblurb">Take a look at the past two CC Conventions</p>
-        <a class="linkpast" href="#">
-            <img src="./images/Img-Placeholder(1).png" alt="CCC 2020">
-        </a>
-        <a class="linkpast" href="#">
-            <img src="./images/Img-Placeholder(1).png" alt="CCC 2018">
-        </a>
+        <div id="pastimagecontainer">
+            <a class="linkpast" href="#">
+                <img class="pastimage" src="./images/Img-Placeholder(1).png" alt="CCC 2020">
+            </a>
+            <a class="linkpast" href="#">
+                <img class="pastimage" src="./images/Img-Placeholder(1).png" alt="CCC 2018">
+            </a>
+        </div>
         <span class="borderspan"></span>
     </section>
     <footer>

@@ -22,7 +22,7 @@ header {
   height: 36px;
 }
 
-#bottomheader {
+.bottomheader {
   display: flex;
   height: 75px;
   justify-content: center;
@@ -52,6 +52,8 @@ header {
 #aboutheadline {
   text-align: center;
   margin: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 #welcome {
@@ -357,4 +359,132 @@ footer {
 
 #logolink {
   align-self: center;
+}
+
+#topheaderitems {
+  height: 100%;
+  width: 400px;
+  color: #d3d3d3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#topheaderitems a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#desktopmenu {
+  display: none;
+}
+
+#logoplace {
+  max-width: 550px;
+  max-height: 200px;
+}
+
+#pastimagecontainer {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url(./images/main_desktopBG.png);
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutheader {
+    background-color: #faf4f4;
+    background-image: url(./images/about_bg_01.png);
+    background-size: contain;
+    background-position: center;
+  }
+
+  #topheader {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #mobilemenu {
+    display: none;
+  }
+
+  .bottomheader {
+    justify-content: space-around;
+    background-color: #fff;
+    box-shadow: 0 0 18px #858484;
+  }
+
+  #desktopmenu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menuitem {
+    color: #272a31;
+    font-size: 1em;
+    border: none;
+  }
+
+  .menuitem:hover {
+    color: #ec5242;
+  }
+
+  #headline {
+    align-self: flex-start;
+    margin-left: 75px;
+  }
+
+  #welcome {
+    font-size: 2.5em;
+  }
+
+  #title {
+    font-size: 4.3em;
+  }
+
+  #abouttitle {
+    font-size: 4.3em;
+  }
+
+  #aboutblurb {
+    width: 70%;
+    align-self: center;
+  }
+
+  #openingblurb {
+    align-self: flex-start;
+    width: 80%;
+  }
+
+  .programdiv {
+    width: 60%;
+    align-self: center;
+  }
+
+  #speakercontainer {
+    height: 650px;
+    width: 95%;
+    align-self: center;
+    padding-left: 55px;
+  }
+
+  .card {
+    width: 47%;
+    padding: 0;
+  }
+
+  #pastimagecontainer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  .linkpast {
+    width: 40%;
+  }
 }
