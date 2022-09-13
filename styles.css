@@ -452,7 +452,7 @@ footer {
   }
 
   #aboutblurb {
-    width: 80%;
+    width: 70%;
     align-self: center;
   }
 
@@ -480,12 +480,11 @@ footer {
 
   #pastimagecontainer {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 95%;
   }
 
   .linkpast {
-    width: 48%;
-    margin-bottom: 0;
+    width: 40%;
   }
 }
