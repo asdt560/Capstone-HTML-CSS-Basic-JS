@@ -83,5 +83,33 @@ const opener = document.querySelector('#mobilemenubutton');
 
 opener.addEventListener('click', menuOpen);
 
-const hiddencards = document.getElementsByClassName('hidden');
+const hiddencards = document.querySelectorAll('.hidden');
 console.log(hiddencards);
+
+const more = document.querySelector('#morebutton');
+
+function moreCards() {
+  hiddencards.forEach((card) => {
+    if (card.style.display === 'none') {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+const arrow = document.querySelector('#arrow');
+console.log(arrow);
+
+function buttonChanger() {
+  if (more.innerHTML === 'MORE <i id="arrow" class="fa-solid fa-greater-than">') {
+    more.innerHTML = 'LESS <i id="arrow" class="fa-solid fa-greater-than">';
+    const transformvalue = 'rotate(270deg)';
+    arrow.style.transform = transformvalue;
+  }
+}
+
+more.addEventListener('click', () => {
+  moreCards();
+  buttonChanger();
+});

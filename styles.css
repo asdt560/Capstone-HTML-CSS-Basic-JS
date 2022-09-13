@@ -293,7 +293,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  #speakercontainer .card:nth-child(n+3) {
+  .hidden {
     display: none;
   }
 }
@@ -337,7 +337,8 @@ footer {
   color: #272a31;
 }
 
-#morebutton {
+
+.cardhandlerbutton {
   width: 80%;
   align-self: center;
   padding: 1em;
@@ -572,5 +573,8 @@ footer {
   #aboutfooter {
     background-color: #272a31;
     color: #d3d3d3;
+  }
+  .cardhandlerbutton {
+    display: none;
   }
 }
