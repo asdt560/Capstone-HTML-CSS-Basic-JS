@@ -14,7 +14,7 @@
   <body>
     <header id="aboutheader">
         <section id="topheader"></section>
-        <section id="bottomheader">
+        <section class="bottomheader">
             <div id="mobilemenu">
                 <a id="mobilemenubutton" href="#">
                     <img src="./images/mobile_menu.png">
@@ -23,6 +23,13 @@
             <a id="logolink" href="/index.html">
                 Placeholder Logo
             </a>
+            <div id="desktopmenu">
+                <a class="menuitem" href="/about.html">About</a>
+                <a class="menuitem" href="#">Program</a>
+                <a class="menuitem" href="#">Join</a>
+                <a class="menuitem" href="#">Sponsor</a>
+                <a class="menuitem" href="#">News</a>
+            </div>
         </section>
         <section id="aboutheadline">
             <p id="welcome">"Hello, creators!"</p>
@@ -40,7 +47,7 @@
             <span class="titleunderline"></span>
         </div>
         <p class="smallblurb">The logo of CC Convention 2022 was decided through the logo competition, from 8. June to 7. July</p>
-        <img class="imagefit" src="./images/placeholderlogo.png" alt="Logo">
+        <img class="imagefit" id="logoplace" src="./images/placeholderlogo.png" alt="Logo">
         <span class="borderspan"></span>
     </section>
     <section id="pastsection">
@@ -49,12 +56,14 @@
             <span class="titleunderline"></span>
         </div>
         <p class="smallblurb">Take a look at the past two CC Conventions</p>
-        <a class="linkpast" href="#">
-            <img src="./images/Img-Placeholder(1).png" alt="CCC 2020">
-        </a>
-        <a class="linkpast" href="#">
-            <img src="./images/Img-Placeholder(1).png" alt="CCC 2018">
-        </a>
+        <div id="pastimagecontainer">
+            <a class="linkpast" href="#">
+                <img class="pastimage" src="./images/Img-Placeholder(1).png" alt="CCC 2020">
+            </a>
+            <a class="linkpast" href="#">
+                <img class="pastimage" src="./images/Img-Placeholder(1).png" alt="CCC 2018">
+            </a>
+        </div>
         <span class="borderspan"></span>
     </section>
     <footer>
