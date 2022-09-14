@@ -213,15 +213,40 @@ header {
 #partners {
   display: none;
   flex-direction: column;
+  justify-content: center;
   background-color: #272a31;
+  padding: 30px;
+}
+
+#aboutpartners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #272a31;
+  padding: 30px;
+}
+
+#aboutpartners .titlecontainer {
+  margin-top: 0;
+}
+
+#partners .titlecontainer {
+  margin-top: 0;
 }
 
 .partners {
   color: #d3d3d3;
 }
 
-#partnercontainer {
+.partnercontainer {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partnerimg {
+  max-height: 60px;
+  max-width: 150px;
 }
 
 footer {
@@ -463,6 +488,47 @@ footer {
   display: flex;
   flex-direction: column;
   width: 98%;
+  margin-bottom: 30px;
+}
+
+.pastimage .last {
+  background-image: url(./images/con-image.jpg);
+}
+
+.pastimage .beforelast {
+  background-image: url(./images/con-image.jpg);
+}
+
+.pastimage {
+  background-image: url(./images/con-image.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-bottom: 20px;
+  height: 300px;
+  width: 350px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec5242;
+  opacity: 0.9;
+  height: 100%;
+}
+
+.year {
+  color: #d3d3d3;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.detailP {
+  color: #d3d3d3;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -583,7 +649,6 @@ footer {
 
   .card {
     width: 47%;
-    padding: 0;
   }
 
   #partners {
@@ -593,7 +658,7 @@ footer {
   #pastimagecontainer {
     flex-direction: row;
     justify-content: space-around;
-    width: 95%;
+    width: 70%;
   }
 
   .linkpast {
@@ -613,5 +678,18 @@ footer {
 
   .cardhandlerbutton {
     display: none;
+  }
+
+  #hidden {
+    display: flex;
+  }
+
+  #aboutpartners {
+    display: none;
+  }
+
+  .partnerimg {
+    max-height: 80px;
+    max-width: 200px;
   }
 }
