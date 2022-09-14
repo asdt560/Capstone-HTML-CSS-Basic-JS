@@ -1,7 +1,7 @@
 const arr = [
   {
     id: '1',
-    mobilestatus: '',
+    mobilestatus: 'shown',
     image: './images/plceholderspeakerimg.png',
     name: 'Name Person 1',
     jobs: 'Professional experience and positions',
@@ -9,7 +9,7 @@ const arr = [
   },
   {
     id: '2',
-    mobilestatus: '',
+    mobilestatus: 'shown',
     image: './images/plceholderspeakerimg.png',
     name: 'Name Person 2',
     jobs: 'Professional experience and positions',
@@ -52,7 +52,7 @@ const arr = [
 const cardholder = document.getElementById('speakercontainer');
 
 arr.forEach((item) => {
-  cardholder.innerHTML += `<div class="card ${item.mobilestatus}">
+  cardholder.innerHTML += `<div class="card" id=${item.mobilestatus}>
   <img class="cardimage" src=${item.image}>
   <div class="cardtext">
       <h3 class="cardtitle">${item.name}</h3>
@@ -83,17 +83,17 @@ const opener = document.querySelector('#mobilemenubutton');
 
 opener.addEventListener('click', menuOpen);
 
-const hiddencards = document.querySelectorAll('.hidden');
+const hiddencards = document.querySelectorAll('#hidden');
 console.log(hiddencards);
 
 const more = document.querySelector('#morebutton');
 
 function moreCards() {
   hiddencards.forEach((card) => {
-    if (card.style.display === 'none') {
-      card.style.display = 'flex';
+    if (card.id === 'hidden') {
+      card.id = 'shown';
     } else {
-      card.style.display = 'none';
+      card.id = 'hidden';
     }
   });
 }
