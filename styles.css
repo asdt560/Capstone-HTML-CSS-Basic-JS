@@ -213,27 +213,89 @@ header {
 #partners {
   display: none;
   flex-direction: column;
+  justify-content: center;
   background-color: #272a31;
+  padding: 30px;
+}
+
+#aboutpartners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #272a31;
+  padding: 30px;
+}
+
+#aboutpartners .titlecontainer {
+  margin-top: 0;
+}
+
+#partners .titlecontainer {
+  margin-top: 0;
 }
 
 .partners {
   color: #d3d3d3;
 }
 
-#partnercontainer {
+.partnercontainer {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.partnerimg {
+  max-height: 60px;
+  max-width: 150px;
 }
 
 footer {
   background-color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 100px;
 }
 
 #mainfooter {
   display: none;
+}
+
+#rightfoot {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin-left: 150px;
+}
+
+#rightfoot p {
+  font-family: 'Lato Bold', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+#leftfoot {
+  margin-right: 220px;
+}
+
+#leftfoot p {
+  line-height: 1.6em;
+}
+
+#aboutfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#aboutfooter #rightfoot {
+  margin: 0;
+}
+
+#aboutfooter #leftfoot {
+  margin: 0;
 }
 
 #logosection {
@@ -292,10 +354,8 @@ footer {
   align-self: center;
 }
 
-@media (max-width: 768px) {
-  .hidden {
-    display: none;
-  }
+#hidden {
+  display: none;
 }
 
 .card {
@@ -336,7 +396,6 @@ footer {
   font-size: 0.8125em;
   color: #272a31;
 }
-
 
 .cardhandlerbutton {
   width: 80%;
@@ -429,6 +488,47 @@ footer {
   display: flex;
   flex-direction: column;
   width: 98%;
+  margin-bottom: 30px;
+}
+
+.pastimage .last {
+  background-image: url(./images/con-image.jpg);
+}
+
+.pastimage .beforelast {
+  background-image: url(./images/con-image.jpg);
+}
+
+.pastimage {
+  background-image: url(./images/con-image.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-bottom: 20px;
+  height: 300px;
+  width: 350px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ec5242;
+  opacity: 0.9;
+  height: 100%;
+}
+
+.year {
+  color: #d3d3d3;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.detailP {
+  color: #d3d3d3;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -549,7 +649,6 @@ footer {
 
   .card {
     width: 47%;
-    padding: 0;
   }
 
   #partners {
@@ -559,7 +658,7 @@ footer {
   #pastimagecontainer {
     flex-direction: row;
     justify-content: space-around;
-    width: 95%;
+    width: 70%;
   }
 
   .linkpast {
@@ -573,8 +672,24 @@ footer {
   #aboutfooter {
     background-color: #272a31;
     color: #d3d3d3;
+    margin: 0;
+    height: 150px;
   }
+
   .cardhandlerbutton {
     display: none;
+  }
+
+  #hidden {
+    display: flex;
+  }
+
+  #aboutpartners {
+    display: none;
+  }
+
+  .partnerimg {
+    max-height: 80px;
+    max-width: 200px;
   }
 }
