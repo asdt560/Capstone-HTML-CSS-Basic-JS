@@ -407,6 +407,10 @@ footer {
   border-radius: 4px;
 }
 
+.cardhandlerbutton:hover {
+  background-color: #d3d3d3;
+}
+
 #arrow {
   transform: rotate(90deg);
   color: #ec5242;

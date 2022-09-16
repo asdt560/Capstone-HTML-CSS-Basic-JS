@@ -102,10 +102,11 @@ const arrow = document.querySelector('#arrow');
 console.log(arrow);
 
 function buttonChanger() {
-  if (more.innerHTML === 'MORE <i id="arrow" class="fa-solid fa-greater-than">') {
-    more.innerHTML = 'LESS <i id="arrow" class="fa-solid fa-greater-than">';
-    const transformvalue = 'rotate(270deg)';
-    arrow.style.transform = transformvalue;
+  if (more.innerHTML === 'MORE <i id="arrow" class="fa-solid fa-greater-than"></i>') {
+    more.innerHTML = 'LESS <i id="arrow" class="fa-solid fa-greater-than" style="transform: rotate(-90deg)"></i>';
+    arrow.style.transform = 'rotate(90deg)';
+  } else {
+    more.innerHTML = 'MORE <i id="arrow" class="fa-solid fa-greater-than"></i>';
   }
 }
 
