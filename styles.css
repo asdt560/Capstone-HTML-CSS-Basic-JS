@@ -622,6 +622,7 @@ footer {
   }
 
   .programdiv {
+    max-height: 250px;
     width: 60%;
     align-self: center;
     flex-direction: column;
@@ -645,9 +646,9 @@ footer {
   }
 
   #speakercontainer {
-    height: 650px;
+    flex-direction: row;
+    max-height: 1250px;
     width: 95%;
-    align-self: center;
     padding-left: 4.5%;
   }
 
